@@ -19,10 +19,18 @@ https://cl.ly/111Z202E0E0A
 Sticky Banner Description
 =================================
 
-In order to make sure that the banner would be sticky only while scrolling through a specific section, and also that it stayed sticky within that specified section even with expanding or collapsing accordian divs, I had to make sure I set certain parameters as references. 
+In order to make sure that the banner would be sticky only while scrolling through a specific section,
+and also that it stayed sticky within that specified section even with expanding or collapsing accordian divs,
+I had to make sure I set certain parameters as references. 
 
-First, I created a div without a height positioned just under both of the panel-collapse divs. This was so I could reference that position in order to get a consistent scroll-top value regardless of whether the panels above were expanded or collapsed.
+First, I created a div without a height positioned just under both of the panel-collapse divs.
+This was so I could reference that position in order to get a consistent scroll-top value regardless of whether the panels
+above were expanded or collapsed.
 
-Next, I made sure I set the height of the collumn containing the sticky banner (right-collumn) to be the same as the height of the parent container. By doing this I was able to make sure that when scrolling passed the bottom of the parent container that all I needed to do was change the positioning of the sticky div to 'absolute' with a bottom position of 0px. This would ensure that after scrolling passed that scroll point that the sticky div would stay at the bottom of it's parent column.
+Next, I made sure I set the height of the collumn containing the sticky banner (right-collumn) to be the same as the heightof the parent container. 
+By doing this I was able to make sure that when scrolling passed the bottom of the parent container that all I needed to do was change the positioning of the sticky div to 'absolute' with a bottom position of 0px. This would ensure that after scrolling passed that scroll point that the sticky div would stay at the bottom of it's parent column.
 
-One other important feature that was needed was the height of the sticky banner itself. Using this height I was able to add it to the current scroll position in order to make sure that when the bottom of the sticky banner crossed the threshold of the bottom of the parent container, that the 'absolute' positioning of the sticky banner would be triggered.
+One other important feature that was needed was the height of the sticky banner itself. 
+Using this height I was able to add it to the current scroll position in order to make sure that when the bottom of the sticky
+banner crossed the threshold of the bottom of the parent container, 
+that the 'absolute' positioning of the sticky banner would be triggered.
