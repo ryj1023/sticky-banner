@@ -27,10 +27,10 @@ First, I created a div without a height positioned just under both of the panel-
 This was so I could reference that position in order to get a consistent scroll-top value regardless of whether the panels
 above were expanded or collapsed.
 
-Next, I made sure I set the height of the collumn containing the sticky banner (right-collumn) to be the same as the heightof the parent container. 
-By doing this I was able to make sure that when scrolling passed the bottom of the parent container that all I needed to do was change the positioning of the sticky div to 'absolute' with a bottom position of 0px. This would ensure that after scrolling passed that scroll point that the sticky div would stay at the bottom of it's parent column.
+Next, I made sure I set the height of the collumn containing the sticky banner (right-collumn) to be the same as the height of the parent container. 
+By doing this I was able to make sure that when scrolling passed the bottom of the parent container that all I needed to do was change the positioning of the sticky div to 'absolute' with a bottom position of 0px.
+This would ensure that after scrolling passed that scroll point that the sticky div would stay at the bottom of it's parent column.
 
 One other important feature that was needed was the height of the sticky banner itself. 
-Using this height I was able to add it to the current scroll position in order to make sure that when the bottom of the sticky
-banner crossed the threshold of the bottom of the parent container, 
-that the 'absolute' positioning of the sticky banner would be triggered.
+Using the height of the banner I was able to add it to the current scroll position in order to make surethat when the bottom of the sticky
+banner crossed the threshold of the bottom of the parent container that the 'absolute' positioning of the sticky banner would be triggered.
